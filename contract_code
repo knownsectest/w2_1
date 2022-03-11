@@ -1,4 +1,6 @@
+//合约部署地址：https://rinkeby.etherscan.io/address/0x0157338ee6841bac35ea97989b36ac6d95a00bf7
 
+//作业内容
 //编写⼀个Bank合约：
 //通过 Metamask 向Bank合约转账ETH
 //在Bank合约记录每个地址转账⾦额
