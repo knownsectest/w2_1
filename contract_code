@@ -1,0 +1,34 @@
+
+//编写⼀个Bank合约：
+//通过 Metamask 向Bank合约转账ETH
+//在Bank合约记录每个地址转账⾦额
+//编写 Bank合约withdraw(), 实现提取出所有的 ETH
+
+
+pragma solidity ^0.5.0;
+
+contract Deom {
+    address payable public _owner;//合约的所有者
+
+    constructor() public payable{
+        _owner=msg.sender;
+        msg.sender;
+    }
+
+    function transfer() public payable{
+        require(msg.value<=_owner.balance);
+        msg.value;
+    }
+    function showBalance() public view returns(uint256,uint256,uint256){
+        address _account=msg.sender;
+        return(_account.balance,_owner.balance,address(this).balance);
+    }
+//withdraw函数提取所有的eth
+    function withdraw() public{
+        address payable send_to_address =msg.sender;
+        uint256 _eth =address(this).balance;
+        send_to_address.transfer(_eth);
+
+}
+
+}
